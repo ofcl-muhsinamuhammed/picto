@@ -1,0 +1,151 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [content-start] repeat(12, [col-start] 88px [col-end]) [content-end] 1fr [full-end];
+    gap: 24px;
+}
+
+.headerContents {
+    grid-column: content-start/content-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header {
+    padding: 20px 0;
+}
+
+#logo {
+    width: 208px;
+}
+
+.navAndContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.navAndContact a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 48px;
+}
+
+.purple-button {
+    display: inline-block;
+    background-color: #A53DFF;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.section1left {
+    grid-column: content-start / col-end 6;
+}
+
+.section1left h1 {
+    color: #132238;
+    font-size: 72px;
+    line-height: 84px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 24px;
+}
+
+.section1left p {
+    color: #556070;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 24px;
+}
+
+.darkerP {
+    color: #132238;
+}
+
+.IMG-HeroRight {
+    grid-column: col-start 8/ content-end;
+    width: 100%;
+}
+
+.bg-EDD8FF {
+    background-color: #EDD8FF;
+}
+
+.Profilefeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profileFeature {
+    margin-top: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 12px;
+    padding-left: 12px;
+    gap: 8px;
+    margin-left: 2px;
+}
+
+.featuretitle {
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #424E60;
+}
+
+.featureDesc {
+    color: #697484;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+section{
+    padding: 126px 0;
+}
